@@ -13,6 +13,9 @@
 </header>
 
 <main class="chat">
+    <div *ngIf="websocketError" class="container alert alert-danger" role="alert">
+        {{websocketError}}
+    </div>
     <div class="container">
         <div class="chat-content">
             <div class="card">
